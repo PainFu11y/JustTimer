@@ -22,7 +22,7 @@ public class MyRunnable implements Runnable {
     public void run() {
          while (true){
              if (seconds == 0 && minutes == 0) {
-                 System.out.printf("Time: %02d:%02d%n", minutes, seconds--); return;
+                 System.out.printf("Time: %02d:%02d%n", minutes, seconds); return;
              }
              System.out.printf("Time: %02d:%02d%n", minutes, seconds--);
              if (seconds == 0 && minutes > 0) {
